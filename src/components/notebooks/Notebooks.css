@@ -1,30 +1,69 @@
 .dashboard {
-    display: flex;
-    background-color: rgba(11, 102, 35, 1); /* Green Background */
-   
+    display: flex; /* Aligns the sidebar and the content */
 }
 
 .content-card {
-    flex: 1;
-    background-color: white;
-    margin: 20px;
-    margin-top: 100px;
-    margin-left: 200px; 
+    flex: 1; /* The content card should take up the rest of the space */
+    display: flex; /* Using flexbox for card layout */
+    flex-wrap: wrap; /* Allows cards to wrap to new lines */
+    gap: 30px; /* Spacing between cards */
+    padding: 20px; /* Padding inside the content area */
+}
+
+.notebook-card {
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 10px; /* Smooth, rounded corners */
+    overflow: hidden; /* Prevents content overflow */
+    text-align: center; /* Centers text and content */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transitions */
+    cursor: pointer; /* Cursor change on hover */
+    background-color: white; /* Background color for the card */
+    flex: 1 1 200px; /* Flexible basis with a minimum width */
+    max-width: 250px; /* Maximum width to maintain consistency */
+    height: 300px; /* Consistent height for all cards */
+}
+
+.notebook-card:hover {
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+.card-image {
+    width: 100%; /* Image takes full width */
+    height: 150px; /* Consistent image height */
+    object-fit: cover; /* Ensures the image fits in the given space */
+    transition: transform 0.3s; /* Smooth transition for hover effects */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: 1000px;
-    padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .content-card {
-        margin-left: 70px;
-    }
+.card-image:hover {
+    transform: scale(1.1); /* Scale up image on hover for "pop" effect */
 }
 
-@media (max-width: 480px) {
-    .content-card {
-        margin-left: 70px;
-        padding: 10px; 
-    }
+.card-title {
+    font-size: 1.2em; /* Slightly larger font for the title */
+    margin: 15px 0; /* Margin above and below the title */
+    color: rgba(11, 102, 35); /* Darker text for readability */
+    text-align: center;
+}
+
+.card-title:hover {
+    color: rgb(3, 64, 25); /* Change color on hover */
+}
+
+.add-card {
+    border: 1px dashed #aaa;
+    color: #666;
+    width: 100%; /* Image takes full width */
+    height: 150px; /* Consistent image height */
+}
+
+.plus-sign {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.add-text {
+    margin-top: 5px;
+    font-size: 1em;
 }
