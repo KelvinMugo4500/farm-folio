@@ -9,20 +9,29 @@ import Dashboard from "./components/home/Dashboard";
 import Services from "./components/services/Services";
 import Notebooks from "./components/notebooks/Notebooks";
 import Market from "./components/market/Market";
-import Chickens from "./components/notebooks/Chickens.js";
+import Chickens from "./components/notebooks/Chickens";
 import Cows from "./components/notebooks/Cows";
 
-// Initial list of notebooks
+const Notebook = ({ title }) => (
+  <div className="dashboard">
+    <Navbar />
+    <div className="content-card">
+      <h1>{title}</h1>
+    </div>
+  </div>
+);
+
+// Initial list of notebooks with general Notebook component
 const initialNotebooks = [
   {
     title: "Chickens",
     path: "/chickens",
-    component: Chickens,
+    component: <Notebook title="Chickens" />,
   },
   {
     title: "Cows",
     path: "/cows",
-    component: Cows,
+    component: <Notebook title="Cows" />,
   },
 ];
 
@@ -35,14 +44,7 @@ function App() {
     const newNotebook = {
       title,
       path: newPath,
-      component: () => (
-        <div className="dashboard">
-          <Navbar />
-          <div className="content-card">
-            <h1>{title}</h1>
-          </div>
-        </div>
-      ),
+      component: <Notebook title={title} />,
     };
     setNotebooks([...notebooks, newNotebook]);
   };
@@ -63,7 +65,7 @@ function App() {
 
           {/* Add routes for existing notebooks */}
           {notebooks.map((notebook, index) => (
-            <Route key={index} path={notebook.path} element={<notebook.component />} />
+            <Route key={index} path={notebook.path} element={notebook.component} />
           ))}
         </Routes>
       </Router>
