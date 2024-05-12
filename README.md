@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Farm Folio
+Farm Folio is a farm management application which allows the user create an account by signing up. Through the app, the user can record their data in the notebook, buy and sell products via the market and also consult with accredited veterinary officers through services feature. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+```git clone <repository-url>```\
+```cd <repository-name>```\
+```npm install```\
+```npm start```
 
-## Available Scripts
+## Usage
+1. Login and sign in to access records.
+2. Notebook: Record farm data(chicken and cows)
+3. Market place: Allow farmers to buy and sell farm products and tools.
+4. Services: Records for vet services and open consultation.
+## Demo
+<img width="942" alt="Capture" src="https://github.com/Maggie-karuri/farm-folio/assets/109177261/a7f2581b-623d-49ae-94b7-67f439ab1e26">
 
-In the project directory, you can run:
 
-### `npm start`
+## Technology
+```
+1. HTML- For page structure.
+2. CSS- For styling and app responsiveness.
+3. Firebase- For authentication.
+4. db.json: Database for storing farm data.
+5. React.js: JavaScript library for building user interfaces and functions.
+6. Semantic UI-React as a user interface.
+7.Font Awesome React icons.
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Team
+Margaret Karuri\
+Haron Bett\
+Kelvin Maina\
+Joy Omonya\
+Shem Karafa\
+Benedict Kamoni
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+We welcome contributions from the community! 
